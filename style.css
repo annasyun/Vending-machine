@@ -1,0 +1,50 @@
+/* layout */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+                    ".        header    header  .       "
+                    "section1 section1 section2 section2"
+                    "section1 section1 section3 section3" ;
+}
+
+/* Components */
+
+.title {
+    grid-area: header;
+    background-color: pink;
+}
+
+.section_select {
+    grid-area: section1;
+    background-color: royalblue;
+}
+
+.section_money {
+    grid-area: section2;
+    background-color:bisque;
+}
+
+.section_result {
+    grid-area: section3;
+    background-color:aquamarine;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calc {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.calc_item {
+    background-color: yellow;
+}
+
+.section_result ul {
+    list-style: none;
+}
