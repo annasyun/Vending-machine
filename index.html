@@ -19,42 +19,43 @@
             <section class="section-select">
                 <h2 class="hidden">음료 선택 및 계산</h2>
                 <div class="items">
-                    <div class="item selected">
+                    <button class="item selected" type="button">
                         <img class="item-img" src="./assets/Original_Cola.png" alt="original-cola">
                         <div class="item-name">Original_Cola</div>
                         <div class="item-price">1000원</div>
-                    </div>
-                    <div class="item sold-out">
+                    </button>
+                    <button class="item sold-out" type="button">
                         <img class="item-img" src="./assets/Violet_Cola.png" alt="violet-cola">
                         <div class="item-name">Violet_Cola</div>
                         <div class="item-price">1000원</div>
-                    </div>
-                    <div class="item">
+                    </button>
+                    <button class="item" type="button">
                         <img class="item-img" src="./assets/Yellow_Cola.png" alt="yellow-cola">
                         <div class="item-name">Yellow_Cola</div>
                         <div class="item-price">1000원</div>
-                    </div>
-                    <div class="item">
+                    </button>
+                    <button class="item" type="button">
                         <img class="item-img" src="./assets/Cool_Cola.png" alt="cool-cola">
                         <div class="item-name">Cool_Cola</div>
                         <div class="item-price">1000원</div>
-                    </div>
-                    <div class="item selected">
+                    </button>
+                    <button class="item selected" type="button">
                         <img class="item-img" src="./assets/Green_Cola.png" alt="green-cola">
                         <div class="item-name">Green_Cola</div>
                         <div class="item-price">1000원</div>
-                    </div>
-                    <div class="item">
+                    </button>
+                    <button class="item" type="button">
                         <img class="item-img" src="./assets/Orange_Cola.png" alt="orange-cola">
                         <div class="item-name">Orange_Cola</div>
                         <div class="item-price">1000원</div>
-                    </div>
+                    </button>
                 </div>
                 <div class="calc">
                     <div class="calc-item calc-change">잔액 :<span class="txt-change">1,000 원</span></div>
-                    <div class="calc-item calc-refund">거스름돈 반환</div>
-                    <div class="calc-item calc-depos-amount">입금액 입력</div>
-                    <div class="calc-item calc-depos">입금</div>
+                    <input class="calc-item calc-refund" type="button" value="거스름돈 반환"></input>
+                    <!-- <label for="depos-amount"></label> -->
+                    <input class="calc-item calc-depos-amount" id="depos-amount" type="number" placeholder="입금액 입력" required></input>
+                    <input class="calc-item calc-depos" type="button" value="입금"></input>
                     <div class="calc-item calc-selected">
                         <ul class="calc-lists">
                             <li class="calc-li">
@@ -80,7 +81,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="calc-item calc-get">획득</div>
+                    <input class="calc-item calc-get" type="button" value="획득"></input>
                 </div>
             </section>
             <section class="section-result">
