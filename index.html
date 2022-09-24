@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="title">
+                <img class="title-img"src="./assets/logo.png" alt="colacola-logo">
+            </h1>
+        </header>
+        <main class="cola-app">
+            <section class="section-select">
+                <h2 class="hidden">음료 선택 및 계산</h2>
+                <div class="items">
+                    <div class="item selected">
+                        <img class="item-img" src="./assets/Original_Cola.png" alt="original-cola">
+                        <div class="item-name">Original_Cola</div>
+                        <div class="item-price">1000원</div>
+                    </div>
+                    <div class="item sold-out">
+                        <img class="item-img" src="./assets/Violet_Cola.png" alt="violet-cola">
+                        <div class="item-name">Violet_Cola</div>
+                        <div class="item-price">1000원</div>
+                    </div>
+                    <div class="item">
+                        <img class="item-img" src="./assets/Yellow_Cola.png" alt="yellow-cola">
+                        <div class="item-name">Yellow_Cola</div>
+                        <div class="item-price">1000원</div>
+                    </div>
+                    <div class="item">
+                        <img class="item-img" src="./assets/Cool_Cola.png" alt="cool-cola">
+                        <div class="item-name">Cool_Cola</div>
+                        <div class="item-price">1000원</div>
+                    </div>
+                    <div class="item selected">
+                        <img class="item-img" src="./assets/Green_Cola.png" alt="green-cola">
+                        <div class="item-name">Green_Cola</div>
+                        <div class="item-price">1000원</div>
+                    </div>
+                    <div class="item">
+                        <img class="item-img" src="./assets/Orange_Cola.png" alt="orange-cola">
+                        <div class="item-name">Orange_Cola</div>
+                        <div class="item-price">1000원</div>
+                    </div>
+                </div>
+                <div class="calc">
+                    <div class="calc-item calc-change">잔액 :<span class="txt-change">1,000 원</span></div>
+                    <input class="calc-item calc-refund" type="button" value="거스름돈 반환"></input>
+                    <!-- <label for="depos-amount"></label> -->
+                    <input class="calc-item calc-depos-amount" id="depos-amount" type="number" placeholder="입금액 입력" required></input>
+                    <input class="calc-item calc-depos" type="button" value="입금"></input>
+                    <div class="calc-item calc-selected">
+                        <ul class="calc-lists">
+                            <li class="calc-li">
+                                <div class="calc-product">
+                                    <img class="calc-img" src="./assets/Original_Cola.png" alt="original-cola">
+                                    <div class="calc-name">Original_Cola</div>
+                                </div>
+                                <div class="calc-count">1</div>
+                            </li>
+                            <li class="calc-li">
+                                <div class="calc-product">
+                                    <img class="calc-img" src="./assets/Green_Cola.png" alt="original-cola">
+                                    <div class="calc-name">Green_Cola</div>
+                                </div>
+                                <div class="calc-count">2</div>
+                            </li>
+                            <li class="calc-li">
+                                <div class="calc-product">
+                                    <img class="calc-img" src="./assets/Original_Cola.png" alt="original-cola">
+                                    <div class="calc-name">Original_Cola</div>
+                                </div>
+                                <div class="calc-count">1</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <input class="calc-item calc-get" type="button" value="획득"></input>
+                </div>
+            </section>
+            <section class="section-result">
+                <div class="gr-pocket-money">
+                    <p class="txt-pocket-money">
+                        소지금: <span class="pocket-money">25,000원</span>
+                    <p/>
+                </div>
+               <div class="result-get">
+                    <h2>획득한 음료</h2>
+                    <ul class="result-list">
+                        <li class="result-item">
+                            <div class="result-product">
+                                <img src="./assets/Original_Cola.png" alt="">Original_Cola 
+                            </div>
+                            <div class="calc-count">1</div>
+                        </li>
+                        <li class="result-item">
+                            <div class="result-product">
+                                <img src="./assets/Green_Cola.png" alt="">Green_Cola 
+                            </div>
+                            <div class="calc-count">2</div>
+                        </li>
+                        <li class="result-item">
+                            <div class="result-product">
+                                <img src="./assets/Orange_Cola.png" alt="">Oragne_Cola 
+                            </div>
+                            <div class="calc-count">1</div>
+                        </li>
+                        <li class="result-item">
+                            <div class="result-product">
+                                <img src="./assets/Violet_Cola.png" alt="">Viloet_Cola 
+                            </div>
+                            <div class="calc-count">5</div>
+                        </li>
+                    </ul>
+                    <div class="text-total">총금액 : 9,000원</div>
+               </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

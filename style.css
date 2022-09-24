@@ -1,0 +1,282 @@
+/* layout */
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+body,input {
+	font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+
+body{
+    background-color:#EAE8FE;
+}
+
+.cola-app {
+    display: flex;
+    justify-content: center;
+    column-gap: 28px;
+    /* display: grid;
+    grid-template-columns: 360px 360px;
+    justify-content: center;
+    gap: 28px; */
+}
+
+/* Components */
+
+.title-img {
+    width: 386px;
+    height: 164.12px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 67px;
+}
+
+.section-select {
+    background: #FFFFFF;
+    padding: 31px 27px 28px 27px;
+    width: 360px;
+    height: 545px;
+}
+
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+.item {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5) ;
+    border-radius: 10px;
+    width: 94px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.item-img {
+    width: 35.86px;
+    height: 64.86px;
+}
+
+.item-name {
+    font-size: 9px;
+    color: #333333;
+    margin-top: 6.07px;
+}
+
+.item-price {
+    background-color: #6327FE;
+    border-radius: 50px;
+    color:#FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    width: 70px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 7px;
+}
+
+
+.items .selected {
+    border: 3px solid #6327FE;
+}
+
+
+/* 비포 혹은 애프터 가상요소 사용해서 백그라운드로
+검은색 배경 + 품절 컨텐츠 넣기!! */
+
+
+.calc {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    row-gap: 11px;
+    column-gap: 12px;
+    margin-top: 20px;
+}
+
+.calc-item {
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.calc-change {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 6px 10px 7px 10px;
+    font-size: 14px;
+    background-color: #EAE8FE;
+}
+
+.calc-refund {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    font-size: 13px;
+    background-color: #FFFFFF;
+    border-style: none;
+}
+
+.calc-depos-amount {
+    border: 1px solid #BDBDBD;
+    color: #BDBDBD;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 6px;
+}
+
+.calc-depos {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    background-color: #FFFFFF;
+    border-style: none;
+}
+
+.calc-selected {
+    border: 1px solid #BDBDBD;
+    background-color: #EAE8FE;
+}
+
+.calc-get {
+    background-color: #6327FE;
+    text-align: center;
+    color: #FFFFFF;
+    height: 106px;
+    line-height: 106px;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.calc-selected {
+    overflow: hidden;
+    width: 200px;
+    height: 106px;
+    padding: 12px 18px 12px 12px;
+}
+
+.calc-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    margin-top: 6px;
+    width: 170px;
+    height: 46px;
+    border-radius: 5px;
+}
+
+.calc-product {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.calc-selected .calc-img {
+    width: 17.93px;
+    height: 32.93px;
+}
+
+.calc-name {
+    color: #333333;
+    font-size: 9px;
+    margin-left: 10.04px;
+}
+
+.calc-count {
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.gr-pocket-money {
+    background-color: #FFFFFF;
+    padding: 9px 27px;
+    width: 360px;
+    height: 50px;
+}
+
+.txt-pocket-money {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #EAE8FE;
+    padding: 6px 6px 10px 6px;
+    
+}
+
+.result-get {
+    width: 360px;
+    height: 474px;
+    margin-top: 20px;
+    background-color:#FFFFFF;
+    padding: 25px 27px 52px 27px;
+}
+
+.result-get h2 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.result-list {
+    background-color: #EAE8FE ;
+    list-style: none;
+    margin-top: 13px;
+    padding: 12px 18px 12px;
+    width: 306px;
+    height: 364px;
+    font-size: 9px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.result-product {
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
+.result-item img{
+    width: 18px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+.text-total {
+    width: 109px;
+    height: 20px;
+    margin-top: 6px;
+    margin-left: auto;
+    text-align: right;
+    font-size: 12px;
+}

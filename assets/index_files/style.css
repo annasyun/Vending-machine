@@ -1,0 +1,74 @@
+/* layout */
+
+body {
+    background-color:#EAE8FE;
+}
+
+.cola-app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Components */
+
+.title-img {
+    width: 386px;
+    height: 164.12px;
+}
+
+.title {
+    text-align: center;
+}
+
+.section-select {
+    background: #FFFFFF;
+}
+
+.section-pocket-money {
+    background-color:bisque;
+}
+
+.section-result {
+    background-color:aquamarine;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 94px;
+    height: 130px;
+    text-align: center;
+    /* margin: auto; */
+}
+
+.item-img {
+    width: 35.86px;
+    height: 64.86px;
+}
+
+.item-name {
+    font-size: 9px;
+}
+
+.item-price {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.calc {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.calc-item {
+    background-color: yellow;
+}
+
+.section-result ul {
+    list-style: none;
+}
