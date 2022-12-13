@@ -45,7 +45,7 @@ class ColaGenerator {
       const item = document.createElement("li");
       const itemTemplate = `
             <button type="button" class="btn-item" data-item="${el.name}" data-count="${el.count}" data-price="${el.cost}" data-img="${el.img}">
-                <img src="src/images/${el.img}" alt="" class="img-item">
+                <img src="../src/images/${el.img}" alt="" class="img-item">
                 <strong class="tit-item">${el.name}</strong>
                 <span class="txt-price">${el.cost}원</span>
             </button>
