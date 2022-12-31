@@ -18,7 +18,7 @@ class Vendingmachine {
     this.bindEvents();
   }
 
-  // 선택한 음료수 목록 생성
+  // 선택한 콜라음료수 목록 생성
   stagedItemGenerator(target) {
     const stagedItem = document.createElement("li");
     stagedItem.dataset.item = target.dataset.item;
