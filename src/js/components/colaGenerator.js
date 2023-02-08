@@ -9,25 +9,8 @@ class ColaGenerator {
     });
   }
 
-  // await는 반드시 async 함수안에서만 작동합니다.
   async loadData(callback) {
-    // asynchronous javascript and xml
-    // javascript object notation
-    // const requestObj = new XMLHttpRequest(); // 서버와 통신하기 위해 객체를 생성합니다.
-    // requestObj.open('GET', 'src/js/item.json'); // 요청 시작
-    // requestObj.onreadystatechange = () => { // readyState 가 변화하면 트리거
 
-    //     if (requestObj.readyState === 4 && requestObj.status === 200) {
-    //         callback(JSON.parse(requestObj.responseText));
-    //     }
-    // }
-    // requestObj.send(null);
-
-    // fetch()를 호출하면 브라우저는 네트워크 요청을 보내고 프라미스가 반환됩니다.
-    // await를 통해 프라미스 객체가 반환되기를 기다립니다.
-    // 일반적인 fetch 요청은 두 개의 await 호출로 구성됩니다.
-    // await fetch(url, options); // 통신 요청
-    // await response.json(); // json 본문을 읽음
     const response = await fetch("src/js/item.json");
 
     if (response.ok) {
